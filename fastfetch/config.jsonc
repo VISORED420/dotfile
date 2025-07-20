@@ -1,0 +1,247 @@
+// {
+//     // Fastfetch configuration - Colorful yet minimalist with cat image
+//     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    
+//     "logo": {
+//         // CUSTOM IMAGE: Using your custom image from images folder
+//         // Current image: "custom-image.png" (renamed from "Pasted image.png")
+//         // To use a different image, replace the filename below:
+//         "source": "/home/darci/.config/fastfetch/images/custom-image.png",
+        
+//         // If you don't have a cat image yet, uncomment the line below:
+//         // "source": "cat",
+        
+//         // Logo positioning and sizing - larger size with aspect ratio preserved
+//         "type": "kitty",
+//         "width": 24,
+//         "preserveAspectRatio": true,
+//         "padding": {
+//             "top": 2,
+//         }
+//     },
+    
+//     "display": {
+//         // Colorful minimalist color scheme
+//         "color": {
+//             "keys": "cyan",
+//             "title": "magenta",
+//             "separator": "blue",
+//             "output": "white"
+//         },
+        
+//         // Clean layout - stable settings
+//         "separator": " ➤ ",
+//         "size": {
+//             "maxPrefix": 8,
+//             "maxKey": 15
+//         },
+//         "temp": {
+//             "ndigits": 1
+//         },
+//         "percent": {
+//             "type": 1,
+//             "color": {
+//                 "green": "green",
+//                 "yellow": "yellow", 
+//                 "red": "red"
+//             }
+//         }
+//     },
+    
+//     "modules": [
+//         {
+//             "type": "title",
+//             "color": {
+//                 "user": "bright_magenta",
+//                 "at": "blue",
+//                 "host": "bright_cyan"
+//             }
+//         },
+//         {
+//             "type": "separator",
+//             "string": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+//         },
+//         {
+//             "type": "os",
+//             "key": "󰌽 OS",
+//             "format": "{3} {12}",
+//             "keyColor": "blue"
+//         },
+//         {
+//             "type": "kernel", 
+//             "key": "󰌽 Kernel",
+//             "keyColor": "green"
+//         },
+//         {
+//             "type": "uptime",
+//             "key": "󰅐 Uptime", 
+//             "keyColor": "yellow"
+//         },
+//         {
+//             "type": "packages",
+//             "key": "󰏖 Packages",
+//             "keyColor": "magenta"
+//         },
+//         {
+//             "type": "shell",
+//             "key": "󰆍 Shell",
+//             "keyColor": "cyan"
+//         },
+//         {
+//             "type": "wm", 
+//             "key": "󰖲 WM",
+//             "keyColor": "red"
+//         },
+//         {
+//             "type": "terminal",
+//             "key": "󰆍 Terminal",
+//             "keyColor": "bright_blue"
+//         },
+//         {
+//             "type": "cpu",
+//             "key": "󰻠 CPU",
+//             "keyColor": "bright_green",
+//             "showPeCoreCount": true
+//         },
+//         {
+//             "type": "gpu", 
+//             "key": "󰍛 GPU",
+//             "keyColor": "bright_red"
+//         },
+//         {
+//             "type": "memory",
+//             "key": "󰑭 Memory",
+//             "keyColor": "bright_yellow"
+//         },
+//         {
+//             "type": "disk",
+//             "key": "󰋊 Disk",
+//             "keyColor": "bright_magenta"
+//         },
+//         {
+//             "type": "battery",
+//             "key": "󰁹 Battery",
+//             "keyColor": "bright_cyan"
+//         },
+//         "break",
+//         {
+//             "type": "colors",
+//             "symbol": "circle"
+//         }
+//     ]
+// }//  Thanks to Bina
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+        // CUSTOM IMAGE: Using your custom image from images folder
+        // Current image: "custom-image.png" (renamed from "Pasted image.png")
+        // To use a different image, replace the filename below:
+        "source": "/home/darci/.config/fastfetch/images/custom-image.png",
+        
+        // If you don't have a cat image yet, uncomment the line below:
+        // "source": "cat",
+        
+        // Logo positioning and sizing - larger size with aspect ratio preserved
+        "type": "kitty",
+        "width": 24,
+        "preserveAspectRatio": true,
+        "padding": {
+            "top": 2,
+        }
+    },
+  "display": {
+        "separator": " ➜  "
+  },
+  "modules": [
+      "break",
+      "break",
+      "break",
+       {
+          "type": "os",
+          "key": "OS   ",
+          "keyColor": "31",  // = color1
+      },
+      {
+          "type": "kernel",
+          "key": " ├  ",
+          "keyColor": "31",
+      },
+      {
+          "type": "shell",
+          "key": " └  ",
+          "keyColor": "31", 
+      },
+      "break",
+      {
+          "type": "wm",
+          "key": "WM   ",
+          "keyColor": "32", 
+      },
+      {
+          "type": "wmtheme",
+          "key": " ├ 󰉼 ",
+          "keyColor": "32",
+      },
+      {
+          "type": "icons",
+          "key": " ├ 󰀻 ",
+          "keyColor": "32",
+      },
+      {
+          "type": "cursor",
+          "key": " ├  ",
+          "keyColor": "32", 
+      },
+      {
+          "type": "terminal",
+          "key": " ├  ",
+          "keyColor": "32",
+      },
+      {
+          "type": "terminalfont",
+          "key": " └  ",
+          "keyColor": "32", 
+      },
+      "break",
+      {
+          "type": "host",
+          "format": "{5} {1} Type {2}",
+          "key": "PC   ",
+          "keyColor": "33",
+      },
+      {
+          "type": "cpu",
+          "format": "{1} ({3}) @ {7} GHz",
+          "key": " ├  ",
+          "keyColor": "33",
+      },
+      {
+          "type": "gpu",
+          "format": "{1} {2} @ {12} GHz",            
+          "key": " ├ 󰢮 ",
+          "keyColor": "33",
+      },
+      {
+          "type": "memory",
+          "key": " ├  ",
+          "keyColor": "33",
+      },
+      {
+          "type": "swap",
+          "key": " ├ 󰓡 ",
+          "keyColor": "33",
+      },
+      {
+          "type": "disk",
+          "key": " ├ 󰋊 ",
+          "keyColor": "33",
+      },
+      {
+          "type": "monitor",
+          "key": " └  ",
+          "keyColor": "33",
+      },
+      "break",
+      "break",
+  ]
+}
